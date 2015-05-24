@@ -4,7 +4,7 @@
 #3- set the value of the inverse matrix
 #4- get the value of the inverse matrix
 
-makeCacheMatrix <- function(x = matrix())# it can be called with or without arguments
+makeCacheMatrix <- function(x = matrix())
 {
   inv <- NULL
   
@@ -41,7 +41,7 @@ makeCacheMatrix <- function(x = matrix())# it can be called with or without argu
 #the cache via 'setinv'
 
 cacheSolve <- function(x, ...) {
-  inv<- (x$GETINV)()
+  inv<- x$GETINV()
   
   if(is.null(inv))                            #if the mean was not cached (NULL)
   {
